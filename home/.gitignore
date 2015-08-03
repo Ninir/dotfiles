@@ -72,3 +72,9 @@ nbproject/*
 # Codekit #
 ###########
 *.codekit
+
+
+# Vim #
+#######
+.viminfo
+.netrwhist

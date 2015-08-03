@@ -1,8 +1,6 @@
-"""""""""""""""""""""""""""""""""
-" "
-" "       Gauthier Wallet
-" "
-"""""""""""""""""""""""""""""""""
+"""""""""""""""""""
+""" Ninir's vimrc 
+"""""""""""""""""""
 
 set nocompatible              " be iMproved, required
 filetype off                  " required
@@ -18,7 +16,7 @@ Plugin 'gmarik/Vundle.vim'
 
 Plugin 'tpope/vim-fugitive'
 " plugin from http://vim-scripts.org/vim/scripts.html
-Plugin 'L9'
+" Plugin 'L9'
 " Git plugin not hosted on GitHub
 Plugin 'git://git.wincent.com/command-t.git'
 " git repos on your local machine (i.e. when working on your own plugin)

@@ -1,6 +1,5 @@
 # Compiled source #
 ###################
-*.com
 *.class
 *.dll
 *.exe
@@ -78,3 +77,9 @@ nbproject/*
 #######
 .viminfo
 .netrwhist
+
+# Terraform #
+#############
+.tfstate
+.terraform/
+*.bak

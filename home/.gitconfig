@@ -3,6 +3,7 @@
     l = log --pretty=oneline -n 20 --graph
     # View the current working tree status using the short format
     st = status -s
+    s = status
     # Show the diff between the latest commit and the current state
     d = !"git diff-index --quiet HEAD -- || clear; git diff --patch-with-stat"
     # `git di $number` shows the diff between the state `$number` revisions ago and the current state
@@ -26,6 +27,8 @@
     # Undo a `git push`
     undopush = push -f origin HEAD^:master
 	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%C(bold blue)<%an>%Creset' --abbrev-commit
+    fop = fetch origin --prune
+    rh = reset --hard
 
 [apply]
     # Detect whitespace errors when applying a patch
@@ -36,6 +39,7 @@
     excludesfile = ~/.gitignore
     attributesfile = ~/.gitattributes
     editor = vim
+    autocrlf = false
 
 [color]
     # Use colors in Git commands that are capable of colored output when outputting to the terminal
@@ -66,3 +70,5 @@
 
 [web]
     browser = google-chrome
+[http]
+	postBuffer = 524288000
